@@ -12,14 +12,14 @@ Pod::Spec.new do |spec|
   spec.summary      = "좌표계 변환 라이브러리"
   spec.description  = "GEO와 KATEC 좌표계 변환을 지원하는 라이브러리입니다."
   
-  spec.homepage     = "https://github.com/YourGitHubUsername/MyGeoTransLib"
+  spec.homepage     = "https://github.com/seo-mcr/GeoTrans.git"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Seo" => "seo.soo@macarong.net" }
   
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/YourGitHubUsername/MyGeoTransLib.git", 
+  spec.source       = { :git => "https://github.com/seo-mcr/GeoTrans.git", 
                         :tag => "#{spec.version}" }
   
-  spec.source_files = "GeoTrans/Classes/**/*"
-  spec.public_header_files = "GeoTrans/Classes/**/*.h"
+  spec.source_files = "GeoTrans/Classes/*"
+  spec.public_header_files = "GeoTrans/Classes/*.h"
 end  
