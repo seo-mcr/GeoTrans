@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/seo-mcr/GeoTrans.git", 
                         :tag => "#{spec.version}" }
   
-  spec.source_files = "GeoTrans/Classes/*"
-  spec.public_header_files = "GeoTrans/Classes/*.h"
+  spec.source_files = "Classes/**/*"
+  spec.public_header_files = "Classes/**/*.h"
 end  
