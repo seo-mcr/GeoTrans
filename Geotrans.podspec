@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "GeoTrans"
-  spec.version      = "0.2.0"
+  spec.version      = "0.3.0"
   spec.summary      = "좌표계 변환 라이브러리"
   spec.description  = "GEO와 KATEC 좌표계 변환을 지원하는 라이브러리입니다."
   
@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/seo-mcr/GeoTrans.git", 
                         :tag => "#{spec.version}" }
   
-  spec.source_files = "Classes/**/*"
-  spec.public_header_files = "Classes/**/*.h"
+  spec.source_files = "GeoTrans/Classes/*"
+  spec.public_header_files = "GeoTrans/Classes/*.h"
 end  
