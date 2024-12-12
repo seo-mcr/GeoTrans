@@ -1,0 +1,6 @@
+use_frameworks!
+target 'GeoTrans_Tests' do
+  pod 'GeoTrans', :path => '../'
+  
+  
+end

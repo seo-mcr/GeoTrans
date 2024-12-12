@@ -1,25 +1,42 @@
 #
-#  Be sure to run `pod spec lint Geotrans.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
+# Be sure to run `pod lib lint GeoTrans.podspec' to ensure this is a
+# valid spec before submitting.
 #
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
-Pod::Spec.new do |spec|
-  spec.name         = "GeoTrans"
-  spec.version      = "0.7.0"
-  spec.summary      = "좌표계 변환 라이브러리"
-  spec.description  = "GEO와 KATEC 좌표계 변환을 지원하는 라이브러리입니다."
+Pod::Spec.new do |s|
+  s.name             = 'GeoTrans'
+  s.version          = '0.8.0'
+  s.summary          = 'A short description of GeoTrans.'
+
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
+
+  s.homepage         = 'https://github.com/MenxuSeo/GeoTrans'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'MenxuSeo' => 'seo.soo@macarong.net' }
+  s.source           = { :git => 'https://github.com/MenxuSeo/GeoTrans.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '13.0'
+
+  s.source_files = 'GeoTrans/Classes/**/*'
   
-  spec.homepage     = "https://github.com/seo-mcr/GeoTrans.git"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Seo" => "seo.soo@macarong.net" }
-  
-  spec.platform     = :ios, "13.0"
-  spec.source       = { :git => "https://github.com/seo-mcr/GeoTrans.git", 
-                        :tag => "#{spec.version}" }
-  
-  spec.source_files = "Sources/**/*"
-  spec.public_header_files = "Sources/**/*.h"
-end  
+  # s.resource_bundles = {
+  #   'GeoTrans' => ['GeoTrans/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
+end
